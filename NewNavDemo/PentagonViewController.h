@@ -4,7 +4,6 @@
 @class MyDrawingView;
 
 @interface PentagonViewController : UIViewController {
-    
     MyDrawingView *codeCustomView;
 }
 

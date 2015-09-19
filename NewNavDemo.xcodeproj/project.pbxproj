@@ -10,6 +10,8 @@
 		1449808A1BAD1BAA002EA7A7 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144980891BAD1BAA002EA7A7 /* CollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1449808C1BAD1CDB002EA7A7 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1449808B1BAD1CDB002EA7A7 /* CollectionViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		1449808F1BAD41E2002EA7A7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1449808E1BAD41E2002EA7A7 /* Default-568h@2x.png */; settings = {ASSET_TAGS = (); }; };
+		144980921BADDEA5002EA7A7 /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144980911BADDEA5002EA7A7 /* CustomScrollView.m */; settings = {ASSET_TAGS = (); }; };
+		144980941BADF7EB002EA7A7 /* CustomScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 144980931BADF7EB002EA7A7 /* CustomScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
 		145FFD7E1AE319B50062F840 /* UISSBApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFD7D1AE319B50062F840 /* UISSBApplication.m */; };
 		145FFD811AE31BE60062F840 /* PentagonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 145FFD801AE31BE60062F840 /* PentagonViewController.m */; };
 		14B6A2161AE5574C006A7684 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B6A2151AE5574C006A7684 /* UIKit.framework */; };
@@ -29,6 +31,10 @@
 		1449808B1BAD1CDB002EA7A7 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		1449808D1BAD1CED002EA7A7 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		1449808E1BAD41E2002EA7A7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "NewNavDemo/Default-568h@2x.png"; sourceTree = "<group>"; };
+		144980901BADDE91002EA7A7 /* CustomScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		144980911BADDEA5002EA7A7 /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		144980931BADF7EB002EA7A7 /* CustomScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollViewController.m; sourceTree = "<group>"; };
+		144980951BADF7FE002EA7A7 /* CustomScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomScrollViewController.h; sourceTree = "<group>"; };
 		145FFD7C1AE319990062F840 /* UISSBApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UISSBApplication.h; sourceTree = "<group>"; };
 		145FFD7D1AE319B50062F840 /* UISSBApplication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UISSBApplication.m; sourceTree = "<group>"; };
 		145FFD7F1AE31BCF0062F840 /* PentagonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PentagonViewController.h; sourceTree = "<group>"; };
@@ -106,6 +112,10 @@
 				144980891BAD1BAA002EA7A7 /* CollectionViewController.m */,
 				1449808B1BAD1CDB002EA7A7 /* CollectionViewCell.m */,
 				1449808D1BAD1CED002EA7A7 /* CollectionViewCell.h */,
+				144980901BADDE91002EA7A7 /* CustomScrollView.h */,
+				144980911BADDEA5002EA7A7 /* CustomScrollView.m */,
+				144980931BADF7EB002EA7A7 /* CustomScrollViewController.m */,
+				144980951BADF7FE002EA7A7 /* CustomScrollViewController.h */,
 			);
 			path = NewNavDemo;
 			sourceTree = "<group>";
@@ -191,11 +201,13 @@
 			files = (
 				1449808A1BAD1BAA002EA7A7 /* CollectionViewController.m in Sources */,
 				145FFD811AE31BE60062F840 /* PentagonViewController.m in Sources */,
+				144980921BADDEA5002EA7A7 /* CustomScrollView.m in Sources */,
 				CC38FD6419EB7A4600943990 /* DetailViewController.m in Sources */,
 				1449808C1BAD1CDB002EA7A7 /* CollectionViewCell.m in Sources */,
 				CC38FD6019EB7A3A00943990 /* MasterViewController.m in Sources */,
 				CC38FD3D19EB79D700943990 /* AppDelegate.m in Sources */,
 				14BB46FA1AE9A6D000CDC1F1 /* MyDrawingView.m in Sources */,
+				144980941BADF7EB002EA7A7 /* CustomScrollViewController.m in Sources */,
 				145FFD7E1AE319B50062F840 /* UISSBApplication.m in Sources */,
 				CC38FD3A19EB79D700943990 /* main.m in Sources */,
 			);

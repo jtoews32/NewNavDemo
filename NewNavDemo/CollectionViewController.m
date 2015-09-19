@@ -54,16 +54,12 @@
 
 }
 
-
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     return 36;
 }
 
 
-
-// The cell that is returned must be retrieved from a call to - dequeueReusableCellWithReuseIdentifier:forIndexPath:
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     
@@ -73,12 +69,11 @@
     //cell.backgroundColor=[UIColor greenColor];
     
     return cell;
-    
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake((self.view.frame.size.width-(self.view.frame.size.width/7))/2, 100);
+    return CGSizeMake((self.view.frame.size.width-100)/2, 100);
 }
 
 

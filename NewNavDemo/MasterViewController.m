@@ -4,10 +4,13 @@
 //
 //
 
+#import "AppDelegate.h"
+
 #import "MasterViewController.h"
 #import "DetailViewController.h"
 #import "PentagonViewController.h"
 #import "CollectionViewController.h"
+#import "CustomScrollViewController.h"
 
 //Private interface
 @interface MasterViewController()
@@ -15,7 +18,7 @@
 @property (strong, nonatomic) DetailViewController *detailViewController;
 @property (strong, nonatomic) PentagonViewController *pentagonViewController;
 @property (strong, nonatomic) CollectionViewController *collectionViewController;
-
+@property (strong, nonatomic) CustomScrollViewController *customScrollViewController;
 
 @end
 
@@ -45,9 +48,7 @@
   [super viewDidLoad];
  
   
-  UIBarButtonItem *backButton=[[UIBarButtonItem alloc] init];
-  backButton.title = @"Back";
-  self.navigationItem.backBarButtonItem = backButton;
+
     
     
     
@@ -94,7 +95,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return 3;
+  return 4;
 }
 
 // Customize the appearance of table view cells.
@@ -122,6 +123,9 @@
   if (indexPath.row == 2)
     cell.textLabel.text = NSLocalizedString(@"Collection View", @"");
   
+  if (indexPath.row == 3)
+    cell.textLabel.text = NSLocalizedString(@"Scroller View", @"");
+    
     
   return cell;
 }
@@ -137,14 +141,20 @@
         if (!self.pentagonViewController)
             self.pentagonViewController = [[PentagonViewController alloc] initWithNibName:nil bundle:nil];
         
-        [self.navigationController pushViewController:self.pentagonViewController animated:YES];
+      //  [self.navigationController pushViewController:self.pentagonViewController animated:YES];
+        
+        [[[AppDelegate get] navigationController] pushViewController:self.pentagonViewController animated:YES];
     }
     
     if (indexPath.row == 1)
     {
         if (!self.detailViewController)
             self.detailViewController = [[DetailViewController alloc] initWithNibName:nil bundle:nil];
-        [self.navigationController pushViewController:self.detailViewController animated:YES];
+       
+        //[self.navigationController pushViewController:self.detailViewController animated:YES];
+        
+        
+        [[[AppDelegate get] navigationController] pushViewController:self.detailViewController animated:YES];
     }
     
     if (indexPath.row == 2)
@@ -154,7 +164,20 @@
         
    //     self.collectionViewController.view.backgroundColor = [UIColor greenColor];
         
-        [self.navigationController pushViewController:self.collectionViewController animated:YES];
+        // [self.navigationController pushViewController:self.collectionViewController animated:YES];
+        
+        [[[AppDelegate get] navigationController] pushViewController:self.collectionViewController animated:YES];
+    }
+    
+    
+    if (indexPath.row == 3)
+    {
+        if (!self.customScrollViewController)
+            self.customScrollViewController = [[CustomScrollViewController alloc] initWithNibName:nil bundle:nil];
+
+       // [self.navigationController pushViewController:self.customScrollViewController animated:YES];
+        
+        [[[AppDelegate get] navigationController] pushViewController:self.customScrollViewController animated:YES];
     }
 }
 
