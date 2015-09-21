@@ -23,6 +23,43 @@
 @end
 
 
+/*
+ ADBannerView
+ CAInterAppAudioSwitcherView
+ CAInterAppAudioTransportView
+ GLKView
+ MKAnnotationView
+ MKMapView
+ MKOverlayView
+ MPVolumeView
+ SCNView
+ SKView
+ UIActionSheet
+ UIActivityIndicatorView
+ UIAlertView
+ UICollectionReusableView
+ UIControl
+ UIImageView
+ UIInputView
+ UILabel
+ UINavigationBar
+ UIPickerView
+ UIPopoverBackgroundView
+ UIProgressView
+ UIScrollView
+ UISearchBar
+ UITabBar
+ UITableViewCell
+ UITableViewHeaderFooterView
+ UIToolbar
+ UIVisualEffectView
+ UIWebView
+ UIWindow
+ WKWebView
+ 
+ */
+
+
 @implementation MasterViewController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
